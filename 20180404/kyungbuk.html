@@ -1,0 +1,73 @@
+<!DOCTYPEhtml> <!-- basicSemantic2.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+    header, nav, section, article, aside, footer
+    {border:1px solid gray; margin:5px; padding:8px;width:1000px;}
+    header img{width:990px;height:500px;}
+    section{width:750px;float:left;}
+    section section{width:725px;float:left;}
+    aside{width:221px;float:left; line-height:30px;}
+    footer{height:50px;clear:both;}
+    nav ul{margin:0;padding:0;}
+    nav ul li{display:inline;margin:5px;}
+    aside ul{margin:0;padding:0;}
+    aside ul li{display:block;margin:5px;}
+    aside ul li img{width:50px;height:50px;}
+    a:link{
+    color:blue;background-color:transparent;text-decoration:none;}
+    a:visited{
+    color:crimson;background-color:transparent;text-decoration:none;}
+    a:hover{
+      color:red;background-color:transparent;text-decoration:underline;}
+    a:active{
+      color:blue;background-color:transparent;text-decoration:none;}
+    </style>
+    <title>HTML5 클라이언트 사이드 이미지맵 실습</title></head>
+    <body>
+    <header>
+      <h2>
+      경상북도를 클릭하셨습니다
+      </h2>
+      <img src="../20180404/kyungbuk.jpg" alt="경상북도"/>
+    </header>
+     <section>  <!-- main -->
+      <section>
+           <h3 id="chapter1">
+           경상북도
+           </h3>
+             <p>
+             이것은 인터넷 프로그래밍 5주차 과제이다.<br/>
+             너무 많다.<br/>
+             똑같은걸 만드는 건데 왜 이렇게 힘들까?<br/>
+             밖에는 비가 온다.<br/>
+             벚꽃이 다 지고 있다.<br/>
+             좋다.
+             </p>
+             <p>
+             면적 : 19,026.06 km<sup>2</sup>
+             </p>
+             <p>
+             인구 : 2,696,554명(2013년)
+             </p>
+      </section>
+    </section>  <!-- main -->
+    <aside>
+      <ul>
+      <li><a href=http://www.gb.go.kr/Main/index.html><img src="../20180404/click.png" alt="경상북도 홈페이지"></a><br/>
+      <figcaption>경상북도 홈페이지</figcaption></li>
+        <li><a href=https://www.facebook.com/pridegb><img src="../20180404/facebookOne.png" alt="페이스북"></a><br/>
+      <figcaption>경상북도 페이스북</figcaption></li>
+        <li><a href=https://twitter.com/gyeongsangbukdo><img src="../20180404/twitterYou.png" alt="트위터"></a><br/>
+      <figcaption>경상북도 트위터</figcaption></li>
+      </ul>
+    </aside>
+    <footer>
+      <p>
+      &copy; 20XX Made by Korea. All rights reserved.
+      </p>
+    </footer>
+    </body>
+    </html>
