@@ -1,0 +1,68 @@
+<!DOCTYPEhtml> <!-- kyunggi.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+    header, nav, section, article, aside, footer
+    {border:1px solid gray; margin:5px; padding:8px;width:1000px;}
+    header img{width:990px;height:200px;}
+    section{width:750px;float:left;}
+    section section{width:725px;float:left;}
+    aside{width:221px;float:left; line-height:30px;}
+    footer{height:50px;clear:both;}
+    nav ul{margin:0;padding:0;}
+    nav ul li{display:inline;margin:5px;}
+    aside ul{margin:0;padding:0;}
+    aside ul li{display:block;margin:5px;}
+    aside ul li img{width:50px;height:50px;}
+    a:link{
+    color:blue;background-color:transparent;text-decoration:none;}
+    a:visited{
+    color:crimson;background-color:transparent;text-decoration:none;}
+    a:hover{
+      color:red;background-color:transparent;text-decoration:underline;}
+    a:active{
+      color:blue;background-color:transparent;text-decoration:none;}
+    </style>
+    <title>HTML5 클라이언트 사이드 이미지맵 실습</title></head>
+    <body>
+    <header>
+      <h2>
+      경기를 클릭하셨습니다
+      </h2>
+      <img src="../20180404/kyunggi.jpg" alt="경기도"/>
+    </header>
+     <section>  <!-- main -->
+      <section>
+           <h3 id="chapter1">
+           경기도
+           </h3>
+             <p>
+             전국토의 약 10％를 차지하는 크기이다. 해로나 육로로 국토의 남부와 북부를 쉽게 연결해 주며, 한강과 추가령구조곡 등으로 백두대간의 동쪽으로 연결된다. 한강 이북에는 산간지역이, 한강 이남에는 평야지대가 펼쳐져 있다.
+             </p>
+             <p>
+             면적 : 10,184 km<sup>2</sup>
+             </p>
+             <p>
+             인구 : 12,381,550명(2012년)
+             </p>
+      </section>
+    </section>  <!-- main -->
+    <aside>
+      <ul>
+      <li><a href=http://www.gg.go.kr><img src="../20180404/click.png" alt="경기도 홈페이지"></a><br/>
+      <figcaption>경기도 홈페이지</figcaption></li>
+        <li><a href=https://www.facebook.com/ggsmart120><img src="../20180404/facebookOne.png" alt="페이스북"></a><br/>
+      <figcaption>경기도 페이스북</figcaption></li>
+        <li><a href=https://twitter.com/ggsmart120><img src="../20180404/twitterYou.png" alt="트위터"></a><br/>
+      <figcaption>경기도 트위터</figcaption></li>
+      </ul>
+    </aside>
+    <footer>
+      <p>
+      &copy; 20XX Made by Korea. All rights reserved.
+      </p>
+    </footer>
+    </body>
+    </html>
