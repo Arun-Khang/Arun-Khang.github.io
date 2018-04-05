@@ -1,0 +1,68 @@
+<!DOCTYPEhtml> <!-- basicSemantic2.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+    header, nav, section, article, aside, footer
+    {border:1px solid gray; margin:5px; padding:8px;width:1000px;}
+    header img{width:990px;height:500px;}
+    section{width:750px;float:left;}
+    section section{width:725px;float:left;}
+    aside{width:221px;float:left; line-height:30px;}
+    footer{height:50px;clear:both;}
+    nav ul{margin:0;padding:0;}
+    nav ul li{display:inline;margin:5px;}
+    aside ul{margin:0;padding:0;}
+    aside ul li{display:block;margin:5px;}
+    aside ul li img{width:50px;height:50px;}
+    a:link{
+    color:blue;background-color:transparent;text-decoration:none;}
+    a:visited{
+    color:crimson;background-color:transparent;text-decoration:none;}
+    a:hover{
+      color:red;background-color:transparent;text-decoration:underline;}
+    a:active{
+      color:blue;background-color:transparent;text-decoration:none;}
+    </style>
+    <title>HTML5 클라이언트 사이드 이미지맵 실습</title></head>
+    <body>
+    <header>
+      <h2>
+      충청북도를 클릭하셨습니다
+      </h2>
+      <img src="../20180404/chbuk.jpg" alt="충북 단양"/>
+    </header>
+     <section>  <!-- main -->
+      <section>
+           <h3 id="chapter1">
+           충청북도
+           </h3>
+             <p>
+             대한민국 유일의 내륙도로 북동쪽에 태백산맥, 동쪽에 소백산맥, 북서쪽에 차령산맥이 지나며 서경은 구릉지와 평야로 되어 있는 남고북저의 거대한 분지 지형이다.
+             </p>
+             <p>
+             면적 : 7,431.5 km<sup>2</sup>
+             </p>
+             <p>
+             인구 : 1,565,972명(2013년)
+             </p>
+      </section>
+    </section>  <!-- main -->
+    <aside>
+      <ul>
+      <li><a href=http://www.chungbuk.go.kr><img src="../20180404/click.png" alt="충청북도 홈페이지"></a><br/>
+      <figcaption>충청북도 홈페이지</figcaption></li>
+        <li><a href=https://www.facebook.com/cbkb21?_rdr=p><img src="../20180404/facebookOne.png" alt="페이스북"></a><br/>
+      <figcaption>충청북도 페이스북</figcaption></li>
+        <li><a href=https://twitter.com/@chungbuk21><img src="../20180404/twitterYou.png" alt="트위터"></a><br/>
+      <figcaption>충청북도 트위터</figcaption></li>
+      </ul>
+    </aside>
+    <footer>
+      <p>
+      &copy; 20XX Made by Korea. All rights reserved.
+      </p>
+    </footer>
+    </body>
+    </html>
