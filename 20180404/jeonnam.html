@@ -1,0 +1,72 @@
+<!DOCTYPEhtml> <!-- basicSemantic2.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+    header, nav, section, article, aside, footer
+    {border:1px solid gray; margin:5px; padding:8px;width:1000px;}
+    header img{width:990px;height:500px;}
+    section{width:750px;float:left;}
+    section section{width:725px;float:left;}
+    aside{width:221px;float:left; line-height:30px;}
+    footer{height:50px;clear:both;}
+    nav ul{margin:0;padding:0;}
+    nav ul li{display:inline;margin:5px;}
+    aside ul{margin:0;padding:0;}
+    aside ul li{display:block;margin:5px;}
+    aside ul li img{width:50px;height:50px;}
+    a:link{
+    color:blue;background-color:transparent;text-decoration:none;}
+    a:visited{
+    color:crimson;background-color:transparent;text-decoration:none;}
+    a:hover{
+      color:red;background-color:transparent;text-decoration:underline;}
+    a:active{
+      color:blue;background-color:transparent;text-decoration:none;}
+    </style>
+    <title>HTML5 클라이언트 사이드 이미지맵 실습</title></head>
+    <body>
+    <header>
+      <h2>
+      전라남도를 클릭하셨습니다
+      </h2>
+      <img src="../20180404/jeonnam.jpg" alt="jeonnam"/>
+    </header>
+     <section>  <!-- main -->
+      <section>
+           <h3 id="chapter1">
+           전라남도
+           </h3>
+             <p>
+             나는 원래 전주 대학교에서<br/>
+            한식을 전공했었다.<br/>
+            아, 그건 전라북도지.<br/>
+            그냥...<br/>
+            그렇다고.
+             </p>
+             <p>
+             면적 : 12,309.03 km<sup>2</sup>
+             </p>
+             <p>
+             인구 : 1,908,996명(2015년)
+             </p>
+      </section>
+    </section>  <!-- main -->
+    <aside>
+      <ul>
+      <li><a href=http://www.jeonnam.go.kr><img src="../20180404/click.png" alt="전라남도 홈페이지"></a><br/>
+      <figcaption>전라남도 홈페이지</figcaption></li>
+        <li><a href=https://www.facebook.com/jeonnam.kr><img src="../20180404/facebookOne.png" alt="페이스북"></a><br/>
+      <figcaption>전라남도 페이스북</figcaption></li>
+        <li><a href=https://twitter.com/greenjeonnam><img src="../20180404/twitterYou.png" alt="트위터"></a><br/>
+      <figcaption>전라남도 트위터</figcaption></li>
+      </ul>
+    </aside>
+    <footer>
+      <p>
+      &copy; 20XX Made by Korea. All rights reserved.
+      </p>
+    </footer>
+    </body>
+    </html>
