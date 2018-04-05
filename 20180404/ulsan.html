@@ -1,0 +1,77 @@
+<!DOCTYPEhtml> <!-- basicSemantic2.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+    header, nav, section, article, aside, footer
+    {border:1px solid gray; margin:5px; padding:8px;width:1000px;}
+    header img{width:990px;height:500px;}
+    section{width:750px;float:left;}
+    section section{width:725px;float:left;}
+    aside{width:221px;float:left; line-height:30px;}
+    footer{height:50px;clear:both;}
+    nav ul{margin:0;padding:0;}
+    nav ul li{display:inline;margin:5px;}
+    aside ul{margin:0;padding:0;}
+    aside ul li{display:block;margin:5px;}
+    aside ul li img{width:50px;height:50px;}
+    a:link{
+    color:blue;background-color:transparent;text-decoration:none;}
+    a:visited{
+    color:crimson;background-color:transparent;text-decoration:none;}
+    a:hover{
+      color:red;background-color:transparent;text-decoration:underline;}
+    a:active{
+      color:blue;background-color:transparent;text-decoration:none;}
+    </style>
+    <title>HTML5 클라이언트 사이드 이미지맵 실습</title></head>
+    <body>
+    <header>
+      <h2>
+      울산광역시를 클릭하셨습니다
+      </h2>
+      <img src="../20180404/ulsan.jpg" alt="울산광역시"/>
+    </header>
+     <section>  <!-- main -->
+      <section>
+           <h3 id="chapter1">
+           울산광역시
+           </h3>
+             <p>
+            다들 IMF로 고생하던 시기,<br/>
+            환율차이를 이용해서<br/>
+            상상도 못할만큼 부를 쌓은<br/>
+            현대중공업, 자동차를 통해<br/>
+            울산은 IMF가 있는지도 몰랐고,<br/>
+            그해(1997년)7월 15일<br/>
+            울산광역시로 승격했다.<br/><br/>
+            중공업이 위기라고 하는데<br/>
+            아직도, 여전히, 잘산다.<br/>
+            feat. 울산사람
+             </p>
+             <p>
+             면적 : 1,057.1 km<sup>2</sup>
+             </p>
+             <p>
+             인구 : 1,150,215명(2013년)
+             </p>
+      </section>
+    </section>  <!-- main -->
+    <aside>
+      <ul>
+      <li><a href=http://www.ulsan.go.kr/rep/index><img src="../20180404/click.png" alt="울산광역시 홈페이지"></a><br/>
+      <figcaption>울산광역시 홈페이지</figcaption></li>
+        <li><a href=https://www.facebook.com/ulsannuri.kr><img src="../20180404/facebookOne.png" alt="페이스북"></a><br/>
+      <figcaption>울산시 페이스북</figcaption></li>
+        <li><a href=https://twitter.com/ulsannuri><img src="../20180404/twitterYou.png" alt="트위터"></a><br/>
+      <figcaption>울산시 트위터</figcaption></li>
+      </ul>
+    </aside>
+    <footer>
+      <p>
+      &copy; 20XX Made by Korea. All rights reserved.
+      </p>
+    </footer>
+    </body>
+    </html>
