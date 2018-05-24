@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!doctype html> <!--  ifTest2.html  -->
+<html lang="ko">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="sample.css"/>
     <script src="sample.js"></script>
-    <title>웹 프로그래밍 실습</title>
+    <title>연산자 예제 실습</title>
     </head>
     
     <body>
@@ -22,7 +27,9 @@
         연산자 예제 실습
       </h4>
       <script>
-      	var score=85, grade=undefined;
+      	var score=window.prompt("점수입력:");
+        score=parseFloat(score);
+        var grade=undefined;
         if(score>=90){
        	 grade="A";
         }
