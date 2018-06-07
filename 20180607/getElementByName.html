@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-- getElementByName.html -->
+<!DOCTYPE html> <!-- getElementsByName.html -->
 <html lang="ko">
 <head>
   <meta charset="utf-8"/>
@@ -7,7 +7,7 @@
  <link rel="stylesheet"href="/20180524/sample.css"/><script src="sample.js"></script>
   <script>
   function fnGetElementsByName(){
-  var accessTag = document.getElementsByName("input_name1");
+  var accessTag = document.getElementsByName("input_name1")[0];
   console.log(accessTag.tagName);
   accessTag.setAttribute("value", "getElementsByName실행!");
   }
