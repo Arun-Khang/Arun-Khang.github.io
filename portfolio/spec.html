@@ -1,0 +1,72 @@
+<!doctype html> <!--  spec.html  -->
+<html lang="ko">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script>
+  	function event1onclick(){
+    document.getElementById("id_1").innerHTML
+    ="<b>운전면허</b> : 1종보통(2013)<br/><br/><b>TOEIC</b> : 790점(2017)<br/>";}
+  	function event2onclick(){
+    document.getElementById("id_1").innerHTML
+    ="<b>군포 대학생 독서토론 대회</b> : 결승 입상(2017)<br/>";}
+  	function event3onclick(){
+    document.getElementById("id_1").innerHTML
+    ="<b>사사학교</b><br/>-<b> 도서부</b> : 2010~2012, 도서부장(2012)<br/>- <b>FingerStyle Guitar</b> : 동아리 창설 및 초대회장(2010~2012)<br/>- <b>Sasa United(축구 동아리)</b> : 창단 멤버(2007~2012), 주장(2011)<br/><br/><b>대전대학교</b><br/>- <b>소프트웨어공학 LAB</b> : 2017~<br/><br/><b>기타</b><br/>- <b>전하교회 방송부</b> : 2017~<br/>- <b>전하교회 청소년 교사</b> : 2017~<br/>";}
+  	function event4onclick(){
+    document.getElementById("id_1").innerHTML
+    ="<b>2006</b><br/>- 새문안교회 태국 치앙마이 해외 단기선교(12일)<br/><br/><b>2011</b><br/>- 춘천 한국해비타트(2주)<br/><br/><b>2013</b><br/>- 사단법인 CAMP 필리핀 해외 파견 봉사활동 (3개월)<br/><br/><b>2016</b><br/>- 전하교회 몽골 울란바토르 해외 단기선교(7일)<br/><br/><b>2017</b><br/>- 전하교회 부룬디 해외 단기선교(13일)<br/>";}
+  </script>
+    <style>
+      *{box-sizing:border-box; padding:0; margin:0;}
+      .row::after{content:"";clear:both;display:table;}
+      .col-1{width:8.33%;}
+      .col-2{width:16.66%;}
+      .col-3{width:25%;}
+      .col-4{width:33.33%;}
+      .col-5{width:41.66%;}
+      .col-6{width:50%;}
+      .col-7{width:58.33%;}
+      .col-8{width:66.66%;}
+      .col-9{width:75%;}
+      .col-10{width:83.33%;}
+      .col-11{width:91.66%;}
+      .col-12{width:100%;}
+      [class*="col-"]{float:left; padding:10px;}
+      .header, .footer{background-color:lightgray; color:black; padding:10px;}
+      .menu ul, .banner ul {list-style-type:none;}
+      .menu li{background-color:crimson; color:black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
+      .menu li:hover{background-color:red;}
+      .banner li{border:2px solid black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
+      .banner li img{width:30%; vertical-align:middle;}
+      table, th, td{border:1px solid black; border-collapse: collapse;}
+      table{width:100%;}
+      th, td{text-align:center; padding:10px; vertical-align:bottom;}
+      th{background-color:gray; color:white;}
+      tr:nth-child(odd){background-color:lightgray;}
+      table.ex1{table-layout:auto;}
+    </style>
+    <title>수강 및 성적</title>
+    </head>
+    
+    <body>
+      <header class="header">
+        <h2>
+          개인 활동 내역
+        </h2>
+      </header>
+      <div class="row"></div>
+      <div id="main">
+        <nav class="col-2 menu">
+          <ul>
+            <li onclick="event1onclick()"><center><b>자격증 및 공인성적</b></center></li>
+            <li onclick="event2onclick()"><center><b>공모전 및 대회</b></center></li>
+            <li onclick="event3onclick()"><center><b>동아리 및 기타활동</b></center></li>
+            <li onclick="event4onclick()"><center><b>봉사활동</b></center></li>
+          </ul>
+        </nav>
+        <section class="col-6">
+          <p id="id_1">보시고 싶은 정보를 클릭해주세요</p>
+        </section></div>
+    </body>
+    </html>
