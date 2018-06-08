@@ -1,9 +1,9 @@
 <!doctype html> <!--  score.html  -->
 <html lang="ko">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <script>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script>
   	function event1onclick(){
     document.getElementById("id_1").innerHTML
     ="<b>비전탐색</b> : 2학점, PASS<br/><b>스포츠건강체력</b> : 1학점, PASS<br/><b>글쓰기기초</b> : 2학점, B+<br/><b>소프트웨어 디자인</b> : 2학점, A+<br/><b>수학1</b> : 3학점, A+<br/><b>프로그래밍 기초 및 실습</b> : 3학점, B+<br/><b>공학설계</b> : 3학점, A+<br/><br/>신청학점 : 16<br>평점 : 4.12";}
@@ -17,7 +17,28 @@
     document.getElementById("id_1").innerHTML
     ="<b>캠퍼스 멘토링</b><br/><b>영어회화</b><br/><b>유클리드 기하학</b><br/><b>오토마타와 응용</b><br/><b>디지털 논리회로</b><br/><b>자료구조 및 실습</b><br/><b>C++ 프로그래밍</b><br/><b>인터넷 프로그래밍</b><br/><br/>신청학점 : 20<br>";}
   </script>
-    <style>
+  <style>
+    header, nav, section, article, aside, footer
+    {border:1px solid gray; margin:5px; padding:8px; width:1000px;}
+    header img{width:600px;height:320px;}
+    img{width: 100px; height:60px;}
+    section{width:750px;float:left;}
+    section section{width:725px;float:left;}
+    aside{width:221px;float:left; line-height:30px;}
+    footer{height:50px;clear:both;}
+    nav ul{margin:0;padding:0;}
+    nav ul li{display:inline;margin:5px;}
+    aside ul{margin:0;padding:0;}
+    aside ul li{display:block;margin:5px;}
+    aside ul li img{width:50px;height:50px;}
+    a:link{
+    color:black;background-color:transparent;text-decoration:none;}
+    a:visited{
+    color:black;background-color:transparent;text-decoration:none;}
+    a:hover{
+      color:red;background-color:transparent;text-decoration:underline;}
+    a:active{
+      color:red;background-color:transparent;text-decoration:none;}
       *{box-sizing:border-box; padding:0; margin:0;}
       .row::after{content:"";clear:both;display:table;}
       .col-1{width:8.33%;}
@@ -33,12 +54,6 @@
       .col-11{width:91.66%;}
       .col-12{width:100%;}
       [class*="col-"]{float:left; padding:10px;}
-      .header, .footer{background-color:lightgray; color:black; padding:10px;}
-      .menu ul, .banner ul {list-style-type:none;}
-      .menu li{background-color:crimson; color:black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
-      .menu li:hover{background-color:red;}
-      .banner li{border:2px solid black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
-      .banner li img{width:30%; vertical-align:middle;}
       table, th, td{border:1px solid black; border-collapse: collapse;}
       table{width:100%;}
       th, td{text-align:center; padding:10px; vertical-align:bottom;}
@@ -46,17 +61,26 @@
       tr:nth-child(odd){background-color:lightgray;}
       table.ex1{table-layout:auto;}
     </style>
-    <title>수강 및 성적</title>
-    </head>
-    
+    <title>E-Portfolio</title></head>
     <body>
-      <header class="header">
+    <header>
+      <h2>
+      강병주 E-Portfolio
+      </h2>
+      <img src="부룬디.jpg" alt="부룬디"/>
+    </header>
+    <nav>
+        <ul>
+        <li><a href="index.html">메인페이지</a></li>
+        <li><a href="spec.html">대외 활동</a></li>
+        <li><a href="travel.html">여행 경력</a></li>
+        <li><a href="http://arun-khang.tistory.com/category/바라보기/책">블로그(티스토리)</a></li>
+      </ul>
+    </nav>
+      <section>
         <h2>
-          학기별 수강 내역 및 성적
-        </h2>
-      </header>
-      <div class="row"></div>
-      <div id="main">
+          수강 내역 및 성적
+        </h2><br/>
         <nav class="col-2 menu">
           <ul>
             <li onclick="event1onclick()"><center><b>2017-1</b></center></li>
@@ -65,8 +89,19 @@
             <li onclick="event4onclick()"><center><b>2018-1</b></center></li>
           </ul>
         </nav>
-        <section class="col-6">
-          <p id="id_1">조회하고 싶은 학기를 선택해주세요</p>
-        </section></div>
+          <p id="id_1">  조회하고 싶은 학기를 선택해주세요</p>
+          </section>
+    <aside>
+      <ul>
+        <li><a href=https://www.facebook.com/Arundhati.Khang><img src="../20180404/facebookOne.png" alt="페이스북"> 페이스북</a></li>
+        <li><a href=https://twitter.com/Be_Arundhati><img src="../20180404/twitterYou.png" alt="트위터"> 트위터</a></li>
+        <li><a href=https://www.instagram.com/arun.khang/><img src="instagram.png" alt="인스타그램"> 인스타그램</li>
+      </ul>
+    </aside>
+    <footer>
+      <p>
+      &copy; 2018 Made by Khang. All rights reserved.
+      </p>
+    </footer>
     </body>
     </html>
